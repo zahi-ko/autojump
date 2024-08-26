@@ -168,13 +168,5 @@ def main():
         time.sleep(1)
 
 
-def debug2(edge_img, start, end, center):
-    cv2.namedWindow('1', cv2.WINDOW_NORMAL)
-    # cv2.rectangle(edge_img, start, end, (255, 0, 0), 2)
-    cv2.circle(edge_img, center, 10, (255, 0, 0), thickness=-1)
-    cv2.imshow('1', edge_img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
 if __name__ == "__main__":
     main()
